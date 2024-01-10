@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<title>Automata Language Tool</title>
+<meta charset="utf-8">
+<style>
+body {
+  background: #e0e7fe; /* Soft lavender background */
+  font-family: 'IBM Plex Sans', sans-serif; /* Bard's primary font */
+  font-size: 16px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333; /* Darker text for better contrast */
+}
+
+h1 {
+  font: bold italic 60px Georgia, serif; /* Maintain Georgia for header */
+  text-align: center;
+  margin-bottom: 30px;
+  color: #263238; /* Darker blue for header */
+}
+
+canvas {
+  max-width: 1000px;
+  background: #fff; /* White canvas background */
+  border-radius: 45px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+div {
+  max-width: 800px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 60px;
+  background: #d7d0d0; /* Light gray content area */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for separation */
+}
+
+.error {
+  color: #ee434a; /* Bard's error color */
+  font-size: 24px;
+  line-height: 26px;
+  padding: 30px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 24px;
+  color: #5b6975; /* Darker gray for body text */
+}
+
+a {
+  color: #007bff; /* Blue link color */
+}
+
+ul {
+  list-style: none; /* Remove bullet points for cleaner look */
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+textarea {
+  display: none;
+  width: 75%;
+  height: 400px;
+  margin: 0 auto;
+}
+</style>
+<script src="java a.js"></script>
+</head>
+<body>
+<h1><u>Automata Language Tool</u></h1>
+<canvas id="canvas" width="800" height="600">
+  <span class="error">Your browser does not support<br>the HTML5 &lt;canvas&gt; element</span>
+</canvas>
+<div>
+  <textarea id="output"></textarea>
+  <p>Here's how to use this tool:</p>
+  <ul>
+    <li><b>Add a state:</b> Double-click on the canvas</li>
+    <li><b>Add an arrow:</b> Shift-drag on the canvas</li>
+    <li><b>Delete something:</b> Click it and press the delete key</li>
+  </ul>
+  <ul>
+    <li><b>Make accept state:</b> Double-click on an existing state</li>
+   
+  </ul>
+</div>
+<p class="center">Created by BOYZ Group V10 </p>
+</body>
+</html>
